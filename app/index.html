@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Markdown Editor</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <section class="controls">
+        <button id="new-file">New File</button>
+        <button id="open-file">Open File</button>
+        <button id="save-markdown" disabled>Save Markdown</button>
+        <button id="revert" disabled>Revert</button>
+        <button id="save-html">Save HTML</button>
+        <button id="show-file" disabled>Show File</button>
+        <button id="open-in-default" disabled>
+          Open in Default Application
+        </button>
+      </section>
+      <section class="content">
+        <label for="markdown" hidden>Markdown Content</label>
+        <textarea class="raw-markdown" id="markdown"></textarea>
+        <div class="rendered-html" id="html"></div>
+      </section>
+    </div>
+  </body>
+  <script>
+    require('./renderer');
+  </script>
+</html>
