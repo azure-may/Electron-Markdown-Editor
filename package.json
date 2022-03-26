@@ -10,7 +10,7 @@
   "author": "Azure",
   "license": "ISC",
   "devDependencies": {
-    "electron": "^11.5.0"
+    "electron": "^13.6.6"
   },
   "dependencies": {
     "marked": "^4.0.10"
